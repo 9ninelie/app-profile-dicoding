@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+   
+    height: 100vh;
+    margin: 0;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAV START */
+header .navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 9999;
+}
+
+header.navbar-container .nav-list ul {
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    background-color: #cbdfbc;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #a44b3f;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    background-color: #a44b3f;
+    color: white;
+}
+/* NAV ENDS */
+
+/* MAIN START */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+
+main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .content article {
+    width: 100%; /* Make articles full-width within the container */
+}
+
+main .content #about-me {
+    flex: 1 1;
+}
+
+main .content #about-me .opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image container horizontally */
+    text-align: center; 
+    color: #a44b3f;
+}
+
+main .content #about-me .opening .title {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+}
+
+main .content #about-me .opening .image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+
+main .content #about-me .opening .image .circular-potrait { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circular container */
+}
+
+main .content #about-me .opening p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+main .content #about-me .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+main .content #about-me .flex-box .box {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-content: center;
+    border: 5px solid #d5e09c;
+    border-radius: 9px;
+    background-color: #f7f4d3;
+}
+
+main .content #about-me .flex-box .box .image {
+    display: flex;
+    justify-content: center;
+}
+
+main .content #about-me .flex-box .box .image img{
+    width: 50px;
+    height: 50px;
+}
+
+main .content #about-me .flex-box .box .text {
+    text-align: center;
+    color: #a44b3f;
+}
+
+main .content #skills .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+main .content #skills .flex-box .opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image container horizontally */
+    text-align: center; 
+    color: #a44b3f;
+}
+
+main .content #skills .flex-box .opening .title {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+}
+
+main .content #skills .flex-box .box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-content: center;
+    border: 5px solid #d5e09c;
+    border-radius: 9px;
+    background-color: #f7f4d3;
+    overflow: auto;
+}
+
+main .content #skills .flex-box .box .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;    
+}
+
+main .content #skills .flex-box .box .image img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+main .content #skills .flex-box .box .text {
+    text-align: center;
+    color: #a44b3f;
+}
+
+main .content #skills .flex-box .box .text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main .content #social-media {
+    height: 100%;
+    display: flex;
+    color: #74816a;
+    flex: 1;
+    flex-flow: column;
+    border: 2px solid #a44b3f;
+    border-radius: 20px;
+    background-color: #f7f4d3;
+    padding: 1rem;
+}
+
+main .content #social-media header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .content #social-media header figure {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10rem; /* Adjust the gap between images */
+    width: 100%;
+    margin: 0; /* Remove default margin */
+}
+
+main .content #social-media header figure img{
+    width: auto;
+    height: 200px;
+    text-align: center;
+}
+
+main .content #social-media section .icons ul{
+    padding: 1.5rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+}
+
+main .content #social-media section .icons li {
+    list-style-type: none;
+}
+
+main .content #social-media section .icons li a {
+    text-decoration: none;
+    font-size: 5rem;
+    color: #a44b3f;
+    transition: all 0.1s ease-in-out;
+}
+
+main .content #social-media section .icons li a:hover {
+    color: #cbdfbc;
+}
+
+/* FOOTER START */
+
+footer {
+    padding: 20px;
+    color: #f7f4d3;
+    background-color: #cbdfbc;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+        flex-direction: column;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content #about-us .opening .title {
+        font-size: 3rem;
+    }
+    
+    main .content #about-us .opening p {
+        font-size: 1rem;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+    
+}
+
+/* FOOTER END */
